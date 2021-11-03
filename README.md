@@ -1,37 +1,40 @@
-# Purpose of This Repo
+# AIND: Natural Language Processing
 
-This repo is meant to be used to keep things organized during content development and act as the source of truth for all projects and exercises related to this course.
+Coding exercises for the Introduction to Natural Language Processing course.
 
-## Folder Structure
+## Setup
 
-### Lesson Folder
+You need Python 3.6+, and the packages mentioned in `requirements.txt`. You can install them using:
 
-This repo contains a folder for each `lesson` and one `project` folder.
-
-Example
-```
-lesson-1-hello
-lesson-2-world
-lesson-3-foo
-lesson-4-bar
-project
+```bash
+pip install -r requirements.txt
 ```
 
-Each `lesson` folder is named using the naming convention of `lesson-#-name-of-lesson`.
+## Data
 
-Example
+Data files for exercises are included under `data/`, but some of the NLP libraries require additional data for performing tasks like 
+PoS tagging, lemmatization, etc. Specifically, `nltk` will throw an error if the required data is not installed. You can use the 
+following Python statement to open the NLTK downloader and select the desired package(s) to install:
+
+```python
+nltk.download()
 ```
-lesson-1-hello
+
+You can also download all available NLTK data packages, which includes a number of sample corpora as well, but that may take a while 
+(10+GB).
+
+## Run
+
+To run any script file, use:
+
+```bash
+python <script.py>
 ```
 
-Four lesson folders have been provided as a template; However, you may need to add more or possibly use less than four depending on what is needed.
+To open a notebook, use:
 
-If you require an additional lesson folder, you can make a copy of the folder and paste it into the root directory.
+```bash
+jupyter notebook <notebook.ipynb>
+```
 
-### Exercises Folder
-
-Each `lesson` folder contains an `exercises` folder. This `exercises` folder should contain all files and instructions necessary for the exercises along with the solution. The solutions for these exercises will be shared with students. See the `README` in the `exercises` folder for information about folder structure.
-
-### Project Folder
-
-The `project` folder should contain all files and instructions necessary for setup. If possible, a set of instructions should be provided for both Udacity workspaces and a way to work locally (for both MacOS and Windows OS). At a minimum, one set of instructions should be provided. A `README` template has been provided in the project folder. This template layout should be used to write your README.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>. Please refer to [Udacity Terms of Service](https://www.udacity.com/legal) for further information.
