@@ -1,4 +1,4 @@
-# AIND: Natural Language Processing
+# Introduction to Natural Language Processing
 
 Coding exercises for the Introduction to Natural Language Processing course.
 
